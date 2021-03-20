@@ -1,0 +1,111 @@
+*
+  box-sizing: border-box
+  outline: none
+
+body
+  font-family: 'Museo Sans Light' ,sans-serif
+  background-color: #fff
+img
+  max-width: 100%
+.container
+  width: 1170px
+  margin: auto
+@media ( max-width: 1200px)
+  .container
+    width: 760px
+@media ( max-width: 768px)
+  .container
+    max-width: 565px
+    width: 90%
+  .section
+    padding-top: 60px
+    padding-bottom: 60px
+    
+@media ( max-widht: 567px)
+  .container
+    max-width: 400px
+    width: 95%
+  
+button
+  background-color: $color-button
+  border-radius: 10px
+  border: none
+  padding: 18px 30px
+  outline: none
+  &:hover
+    background-color: lighten($color-button, 10%)
+    cursor: pointer
+
+.section
+  padding: 90px 0
+  &-title
+    font-family: 'Museo Sans Bold'
+    font-size: 24px
+    color: $text-color
+    line-height: 35px
+    text-align: center
+    max-width: 500px
+  &-subtitle
+    font-size: 16px
+    display: block
+
+.input
+  border: 1px solid $border-input
+  padding: 20px 26px
+  font-size: 15px
+  border-radius: 10px
+  outline: none
+  &:hover
+    border: 1px solid $color-button
+  &:focus
+    border: 1px solid $color-button
+
+
+.scrollup
+  width: 40px
+  height: 40px
+  opacity: 0.3
+  position: fixed
+  bottom: 50px
+  right: 100px
+  display: none
+  text-decoration: none
+  color: black
+
+.arrows
+  &-left, &-right
+    &:hover
+      cursor: pointer
+  
+.repair
+  width: 100%
+  height: 280px
+  display: flex
+ 
+  background-color: $color-button
+  font-size: 32px
+  line-height: 50px
+  font-weight: 300
+ 
+  &-p 
+    max-width: 907px
+    text-align: center
+    margin: auto
+    
+@media ( max-width: 1200px)
+  .repair
+    font-size: 18px
+    line-height: 1.2
+    font-weight: 300
+
+.error
+  border: solid 1px red
+  user-select: none  
+  &:hover
+    border: 1px solid red
+  &:focus
+    border: 1px solid red
+#username-error, #phone-error, #email-error
+  border-color: transparent
+  
+  

@@ -1,0 +1,55 @@
+.footer
+  position: relative
+
+.map
+  position: absolute
+  left: 0
+  top: 0
+  width: 50%
+
+.contacts
+  flex-basis: 50%
+  padding-top: 100px
+  padding-left: 215px
+  
+  &-block
+    display: flex
+    justify-content: flex-end
+  
+  &-list
+    padding-left: 0
+    list-style: none
+
+    &__item
+      display: flex
+      align-items: flex-start
+
+    &__icon
+      margin-right: 25px
+      width: 20px
+      height: 20px
+      text-align: center
+      line-height: 20px
+
+    &__text
+      padding-bottom: 40px
+
+    &__tel
+      font-family: 'Museo Sans Bold'
+      text-decoration: none
+      color: $text-color
+
+
+  &__title
+    font-family: 'Museo Sans Bold'
+    font-size: 22px
+    line-height: 33px
+    margin-bottom: 100px
+
+@media ( max-width: 1200px)
+  .contacts
+    padding-left: 100px
+
+
+
+  
